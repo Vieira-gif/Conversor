@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/style/style.css" />
+    <script src="./public/script/script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="tituloDoProjeto">Conversor Térmico e Monetário</h1>
+      <div id="conversorTermico">
+        <h2 id="tituloDoConversorTermico">Conversor Terminico</h2>
+
+        <input type="number" id="caixaDeCelsius" name="caixaDeCelsius" />
+
+        <input
+          type="button"
+          id="botaoDeCelsius"
+          value="Converter"
+          onclick="converterGraus()"
+        />
+
+        <div id="grausConvertidos">Conversos de Celsius em Fahrenheit</div>
+      </div>
+
+      <div id="conversorMonetario">
+        <h2 id="tituloDoConversorMonetario">Conversor Monetário</h2>
+
+        <input type="number" id="caixaDeLibras" name="caixaDeLibras"/>
+        <input
+          type="button"
+          id="botaoDeLibras"
+          value="Converter"
+          onclick="converterLibra()"
+        />
+
+        <div id="librasConvertidas">Conversor de Libra em Dolar</div>
+      </div>
+    </div>
+  </body>
+</html>
